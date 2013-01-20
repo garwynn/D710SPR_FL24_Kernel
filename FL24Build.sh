@@ -19,7 +19,7 @@ export INITRAMFS_SOURCE=$BASEDIR/E4GT_Multiboot_initramfs
 export INITRAMFS_TMP="/tmp/initramfs-e4gt"
 export JOBS=`grep 'processor' /proc/cpuinfo | wc -l`
 export VARIANT=AGAT_FL24_kernel
-export RELEASE_VER=Agat_FL24-v1.0.0
+export RELEASE_VER=GAR_FL24-v1.0.0
 export CROSS_COMPILE=~/E4GT/arm-eabi-4.4.3/bin/arm-eabi-
 
 ## Command line options that allow overriding defaults, if desired.
