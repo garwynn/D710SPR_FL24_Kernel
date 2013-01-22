@@ -15,12 +15,18 @@ export ARCH=arm
 export DEFCONFIG=garwynn
 export BASEDIR=`readlink -f ..`
 export KERNELDIR=`readlink -f .`
-export INITRAMFS_SOURCE=$BASEDIR/E4GT_Multiboot_initramfs
+export INITRAMFS_SOURCE=$BASEDIR/initramfs/E4GT_Multiboot_initramfs
 export INITRAMFS_TMP="/tmp/initramfs-e4gt"
 export JOBS=`grep 'processor' /proc/cpuinfo | wc -l`
-export VARIANT=AGAT_FL24_kernel
-export RELEASE_VER=GAR_FL24-v1.0.0
+<<<<<<< Updated upstream
+export VARIANT=SXTP_AGAT_FL24_kernel
+export RELEASE_VER=SXTP_Agat_FL24-v0.4.0
 export CROSS_COMPILE=~/E4GT/arm-eabi-4.4.3/bin/arm-eabi-
+=======
+export VARIANT=SXTP_Agat_FL24_kernel
+export RELEASE_VER=SXTP_Agat_FL24-v0.4.0
+export CROSS_COMPILE=~/Kernel/toolchain/prebuilt/arm-eabi-4.4.3/bin/arm-eabi-
+>>>>>>> Stashed changes
 
 ## Command line options that allow overriding defaults, if desired.
 
